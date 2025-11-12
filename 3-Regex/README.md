@@ -60,3 +60,119 @@
 |`re.search()`|搜尋整個字串，只找到第一個符合的|Match 物件或 None|
 |`re.findall()`|回傳所有符合的結果|	list
 |`re.sub()`|取代符合的部分	|str|
+
+
+<table>
+  <tr>
+    <td colspan="8">動漫評分榜（Summary）</td>
+  </tr>
+  <tr>
+    <td colspan="2">作品名稱</td>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+    <td>D</td>
+    <td>E</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>航海王（One Piece）</td>
+    <td></td>
+    <td>★</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>鏈鋸人（Chainsaw Man）</td>
+    <td></td>
+    <td>★</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>咒術迴戰（Jujutsu Kaisen）</td>
+    <td></td>
+    <td>★</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>進擊的巨人（Attack on Titan）</td>
+    <td></td>
+    <td>★</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>一拳超人（One Punch Man）</td>
+    <td></td>
+    <td>★</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>間諜家家酒（SPY×FAMILY）</td>
+    <td></td>
+    <td></td>
+    <td>★</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>死神 千年血戰篇（BLEACH TYBW）</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>★</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>東京復仇者（Tokyo Revengers）</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>★</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>鬼滅之刃（Demon Slayer）</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>★</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>我的英雄學院（My Hero Academia）</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>★</td>
+    <td></td>
+  </tr>
+</table>
