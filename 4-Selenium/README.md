@@ -1,5 +1,5 @@
 # Selenium
-[Chrome Options](#Chrome-Options) | [Webdriver 屬性與方法](#webdriver-屬性與方法) | [Webdriver 定位方法](#webdriver-定位方法) | [CSS Selector](#css-selector)
+[Chrome Options](#Chrome-Options) | [Webdriver 屬性與方法](#webdriver-屬性與方法) | [Webdriver 定位方法](#webdriver-定位方法) | [CSS Selector](#css-selector) | [實用補充](#實用補充)
 
 ### 安裝套件
 ```
@@ -12,7 +12,19 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+
+options = webdriver.ChromeOptions()
+options.add_argument("--start-maximized") # Chrome 瀏覽器在啟動時最大化視窗
+options.add_argument("--incognito") # 無痕模式
+options.add_argument("--disable-popup-blocking") # 停用 Chrome 的彈窗阻擋功能。
+
+service = Service('./chromedriver.exe')  # 請根據實際路徑修改
+driver = webdriver.Chrome(service=service, options=options)
+
+# 開啟網頁
+driver.get("網頁 URL")
 ```
+
 ### Chrome driver download
 [Chrome webdriver Link](https://developer.chrome.com/docs/chromedriver/downloads?hl=zh-tw)  
 
@@ -96,10 +108,19 @@ curl -L -o chromedriver.zip "https://storage.googleapis.com/chrome-for-testing-p
 - 找到父層元素： `//*[text()='台北市']/parent::*`
 
 
-### 查看找到的 element HTML
+### 查看找到 element 的 HTML
 ```python
 elem = driver.find_element(By.XPATH, "//*[text()='台北市']")
 html = elem.get_attribute("outerHTML")
 print(html)
 ```
 
+### 實用 JS script
+**下滑至頁面底部**
+```javascript
+window.scrollTo(0, docment.body.scrollHeight);
+```
+**開啟分頁**
+```javascript
+window.open('about:blank', '_blank');
+```
