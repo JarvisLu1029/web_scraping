@@ -1,5 +1,5 @@
 # Selenium
-[Chrome Options](#Chrome-Options) | [Webdriver 屬性與方法](#webdriver-屬性與方法) | [Webdriver 定位方法](#webdriver-定位方法) | [CSS Selector](#css-selector) | [實用補充](#實用補充)
+[Chrome Options](#Chrome-Options) | [Webdriver 屬性與方法](#webdriver-屬性與方法) | [Webdriver 定位方法](#webdriver-定位方法) | [CSS Selector](#css-selector) | [Explicit Wait](#explicit-waits) | [實用補充](#實用補充)
 
 ### 安裝套件
 ```
@@ -101,6 +101,15 @@ curl -L -o chromedriver.zip "https://storage.googleapis.com/chrome-for-testing-p
 | 多選擇器 OR（`,`）  | `<button class="btn-primary">…` 或 `<button class="btn-main">…`  | `driver.find_elements(By.CSS_SELECTOR,".btn-primary, .btn-main")`  |
 
 
+### Explicit Waits
+```python
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+favoritenumber = WebDriverWait(driver, 10).until(
+    EC.presence_of_element_located((By.CSS_SELECTOR, "span[id='favoritenumber']"))
+).text
+```
+
 ## 實用補充
 
 ### 實用 XPATH 用法
@@ -124,3 +133,4 @@ window.scrollTo(0, docment.body.scrollHeight);
 ```javascript
 window.open('about:blank', '_blank');
 ```
+
