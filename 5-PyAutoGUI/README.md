@@ -1,8 +1,12 @@
 # PyAutoGUI
 ### 安裝套件
 ```
-pip install pyautogui keyboard
+pip install pyautogui opencv-python keyboard
 ```
+
+> [!TIP]
+> 建議可以搭配 `keyboard.is_pressed()` 來偵測鍵盤按鍵，達到更靈活的控制效果。
+
 
 ### 🖥 系統資訊
 
