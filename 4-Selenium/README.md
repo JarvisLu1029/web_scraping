@@ -1,5 +1,5 @@
 # Selenium
-[Chrome Options](#Chrome-Options) | [Webdriver 屬性與方法](#webdriver-屬性與方法) | [Webdriver 定位方法](#webdriver-定位方法) | [CSS Selector](#css-selector) | [Explicit Wait](#explicit-waits) | [實用補充](#實用補充)
+[Chrome Options](#Chrome-Options) | [Webdriver 屬性與方法](#webdriver-屬性與方法) | [Webdriver 定位方法](#webdriver-定位方法) | [Element](#element-屬性方法) | [CSS Selector](#css-selector) | [Explicit Wait](#explicit-waits) | [實用補充](#實用補充)
 
 ### 安裝套件
 ```
@@ -68,6 +68,26 @@ driver.get("網頁 URL")
 | `find_element(By.PARTIAL_LINK_TEXT, 'partial')` | 透過部分匹配的超連結來定位 `<a>` 元素。    |
 | `find_element(By.XPATH, 'xpath')`   | 透過 XPath 表達式來定位元素。適用於複雜的定位需求。     |
 | `find_element(By.CSS_SELECTOR, 'selector')`     | 透過 CSS 選擇器來定位元素。   |
+
+### Element 屬性方法
+| 屬性/方法                      | 描述                                         |
+|---------------------------|--------------------------------------------|
+| `text`                    | 獲取元素的文字內容。                        |
+| `tag_name`                | 獲取元素的標籤名稱。                        |
+| `size`                    | 獲取元素的尺寸。                            |
+| `location`                | 獲取元素的位置。                            |
+| `is_displayed()`          | 判斷元素是否顯示在網頁上。                  |
+| `is_enabled()`            | 判斷元素是否可用。                          |
+| `is_selected()`           | 判斷元素是否被選中（主要用於選項和複選框）。|
+| `click()`                 | 點擊元素。                                  |
+| `send_keys(*value)`       | 向元素輸入文字。                            |
+| `clear()`                 | 清空元素的內容（適用於輸入框）。            |
+| `submit()`                | 提交表單。                                  |
+| `get_attribute(name)`     | 獲取元素的屬性值。                          |
+| `find_element(by, value)` | 在當前元素內查找子元素。                    |
+| `find_elements(by, value)`| 在當前元素內查找多個子元素。                |
+
+
 
 ### CSS Selector
 | 說明 | 範例 HTML + CSS    | Selenium 使用 |
