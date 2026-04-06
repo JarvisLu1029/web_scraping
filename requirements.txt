@@ -1,0 +1,7 @@
+requests
+bs4
+lxml
+selenium
+pyautogui
+keyboard
+opencv-python

@@ -7,7 +7,7 @@
 ## 📦 安裝套件
 
 ```bash
-pip install pyautogui keyboard
+pip install pyautogui keyboard opencv-python
 ```
 
 ---

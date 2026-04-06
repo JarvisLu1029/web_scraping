@@ -7,6 +7,11 @@
 ## 📦 安裝套件
 
 ```bash
+# Selenium
+[Chrome Options](#Chrome-Options) | [Webdriver 屬性與方法](#webdriver-屬性與方法) | [Webdriver 定位方法](#webdriver-定位方法) | [Element](#element-屬性方法) | [CSS Selector](#css-selector) | [Explicit Wait](#explicit-waits) | [實用補充](#實用補充)
+
+### 安裝套件
+```
 pip install selenium
 ```
 
@@ -24,13 +29,14 @@ options.add_argument("--start-maximized") # Chrome 瀏覽器在啟動時最大�
 options.add_argument("--incognito") # 無痕模式
 options.add_argument("--disable-popup-blocking") # 停用 Chrome 的彈窗阻擋功能
 
+# 建立 Chrome 的 webdriver 物件
 driver = webdriver.Chrome(options=options)
-
 # 開啟網頁
 driver.get("網頁 URL")
 ```
 
 ---
+```
 
 ## ⚙️ Chrome Options
 
@@ -80,6 +86,27 @@ driver.get("網頁 URL")
 | `find_element(By.PARTIAL_LINK_TEXT, 'partial')` | 透過部分匹配的超連結來定位 `<a>` 元素。 |
 | `find_element(By.XPATH, 'xpath')` | 透過 XPath 表達式來定位元素。適用於複雜的定位需求。 |
 | `find_element(By.CSS_SELECTOR, 'selector')` | 透過 CSS 選擇器來定位元素。 |
+
+
+### Element 屬性方法
+| 屬性/方法                      | 描述                                         |
+|---------------------------|--------------------------------------------|
+| `text`                    | 獲取元素的文字內容。                        |
+| `tag_name`                | 獲取元素的標籤名稱。                        |
+| `size`                    | 獲取元素的尺寸。                            |
+| `location`                | 獲取元素的位置。                            |
+| `is_displayed()`          | 判斷元素是否顯示在網頁上。                  |
+| `is_enabled()`            | 判斷元素是否可用。                          |
+| `is_selected()`           | 判斷元素是否被選中（主要用於選項和複選框）。|
+| `click()`                 | 點擊元素。                                  |
+| `send_keys(*value)`       | 向元素輸入文字。                            |
+| `clear()`                 | 清空元素的內容（適用於輸入框）。            |
+| `submit()`                | 提交表單。                                  |
+| `get_attribute(name)`     | 獲取元素的屬性值。                          |
+| `find_element(by, value)` | 在當前元素內查找子元素。                    |
+| `find_elements(by, value)`| 在當前元素內查找多個子元素。                |
+
+
 
 ---
 
@@ -164,6 +191,16 @@ driver.get("網頁 URL")
 [Chrome webdriver 官方下載](https://developer.chrome.com/docs/chromedriver/downloads?hl=zh-tw)
 
 Windows 指令下載（記得修改使用的 Chrome 版本）：
+```bash
+curl -L -o chromedriver.zip "https://storage.googleapis.com/chrome-for-testing-public/<version>/win64/chromedriver-win64.zip"
+```
+
+### Chrome driver download 
+> [!TIP]
+> Selenium 4.6.0 之後已經內建自動下載對應版本的 Chrome driver 功能，通常不需要手動下載。  
+
+[Chrome driver Link](https://developer.chrome.com/docs/chromedriver/downloads?hl=zh-tw)  
+windows 指令下載 (記得修改使用的 Chrome 版本)
 ```bash
 curl -L -o chromedriver.zip "https://storage.googleapis.com/chrome-for-testing-public/<version>/win64/chromedriver-win64.zip"
 ```
