@@ -1,0 +1,18 @@
+# Web Scraping 課程套件
+
+# HTTP 請求
+requests
+
+# HTML / XML 解析
+beautifulsoup4
+lxml
+
+# 自動化瀏覽器
+selenium
+
+# 桌面自動化
+pyautogui
+keyboard
+
+# 資料視覺化（4-1_twse_stock 範例使用）
+bokeh
