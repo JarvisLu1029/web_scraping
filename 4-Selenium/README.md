@@ -2,7 +2,7 @@
 
 > 控制瀏覽器自動化操作，處理動態載入的網頁內容
 
-[Chrome Options](#Chrome-Options) | [Webdriver 屬性與方法](#webdriver-屬性與方法) | [Webdriver 定位方法](#webdriver-定位方法) | [Element](#element-屬性方法) | [CSS Selector](#css-selector) | [Explicit Wait](#explicit-waits) | [實用補充](#實用補充)
+[Chrome Options](#chrome-options) | [Webdriver 屬性與方法](#webdriver-屬性與方法) | [Webdriver 定位方法](#webdriver-定位方法) | [Element](#element-屬性方法) | [CSS Selector](#css-selector) | [Explicit Wait](#explicit-waits) | [實用補充](#實用補充)
 ---
 
 ## 📦 安裝套件
@@ -31,7 +31,7 @@ driver.get("網頁 URL")
 
 ---
 
-## ⚙️ Chrome Options
+## Chrome Options
 
 | 設定 | 說明 |
 |:---|:---|
@@ -45,7 +45,7 @@ driver.get("網頁 URL")
 
 ---
 
-## 🏷️ Webdriver 屬性與方法
+## Webdriver 屬性與方法
 
 | 屬性 | 說明 |
 |:---|:---|
@@ -67,7 +67,7 @@ driver.get("網頁 URL")
 
 ---
 
-## 📌 Webdriver 定位方法
+## Webdriver 定位方法
 
 | 定位方法 | 說明 |
 |:---|:---|
@@ -103,7 +103,7 @@ driver.get("網頁 URL")
 
 ---
 
-## 🎨 CSS Selector
+## CSS Selector
 
 | 說明 | 範例 HTML | Selenium 使用 |
 |:---|:---|:---|
@@ -127,7 +127,7 @@ driver.get("網頁 URL")
 
 ---
 
-## ⏳ Explicit Waits
+## Explicit Waits
 
 ```python
 from selenium.webdriver.support.ui import WebDriverWait
@@ -140,7 +140,7 @@ favoritenumber = WebDriverWait(driver, 10).until(
 
 ---
 
-## 🛠️ 實用補充
+## 實用補充
 
 ### 實用 XPATH 用法
 - 用文字內容查找元素：`//*[text()='台北市']`
