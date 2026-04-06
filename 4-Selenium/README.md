@@ -2,20 +2,14 @@
 
 > 控制瀏覽器自動化操作，處理動態載入的網頁內容
 
+[Chrome Options](#Chrome-Options) | [Webdriver 屬性與方法](#webdriver-屬性與方法) | [Webdriver 定位方法](#webdriver-定位方法) | [Element](#element-屬性方法) | [CSS Selector](#css-selector) | [Explicit Wait](#explicit-waits) | [實用補充](#實用補充)
 ---
 
 ## 📦 安裝套件
-
-```bash
-# Selenium
-[Chrome Options](#Chrome-Options) | [Webdriver 屬性與方法](#webdriver-屬性與方法) | [Webdriver 定位方法](#webdriver-定位方法) | [Element](#element-屬性方法) | [CSS Selector](#css-selector) | [Explicit Wait](#explicit-waits) | [實用補充](#實用補充)
-
-### 安裝套件
 ```
 pip install selenium
 ```
 
----
 
 ## 🚀 基本使用範例
 
@@ -36,7 +30,6 @@ driver.get("網頁 URL")
 ```
 
 ---
-```
 
 ## ⚙️ Chrome Options
 
